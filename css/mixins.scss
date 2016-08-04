@@ -1,0 +1,33 @@
+@mixin flexFlow {
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@mixin order($val) {
+  -webkit-box-ordinal-group: $val;  
+  -moz-box-ordinal-group: $val;     
+  -ms-flex-order: $val;     
+  -webkit-order: $val;  
+  order: $val;
+}
+
+@mixin botonblue {
+      background-color:$bluemedium;
+      padding: 13px 31px;
+      border-radius: 26px;
+      border:3px solid $bluemedium;
+      color: white;
+      transition: all .2s linear;
+      &:hover{
+        background-color:transparent;
+        color:$bluemedium;
+      }
+      i{
+      vertical-align: bottom;
+      }
+}
